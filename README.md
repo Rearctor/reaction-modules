@@ -84,6 +84,16 @@ RFCs. Everything below is concept and research: no implementation exists.
 **Open research**
 - [Allocation constraints](research/allocation-constraints.md) - conflicts between modules drawing on the same reaction allocation
 
+## v0 design work
+
+Early design work is tracked through the v0 specification, implementation plan and open
+GitHub Issues. These are draft design targets. Nothing is implemented, deployed or
+scheduled.
+
+- [v0 design specification](docs/v0/design-spec.md)
+- [Implementation plan](docs/v0/implementation-plan.md)
+- [Open issues](../../issues)
+
 ## Links
 
 [Website](https://rearctor.io) · [Docs](https://rearctor.io/docs) · [GitHub](https://github.com/Rearctor) · [X](https://x.com/JoinRearctor) · [Telegram](https://t.me/rearctor)
