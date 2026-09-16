@@ -1,0 +1,32 @@
+{
+  "module_id": "buyback-primary",
+  "version": "0.1",
+  "type": "automated-buyback",
+  "allocation_bps": 3500,
+  "activation_stage": "expansion",
+  "execution_mode": "scheduled",
+  "hard_budget_ceiling": {
+    "denomination": "USDC",
+    "amount": "250000000000"
+  },
+  "parameters": {
+    "trigger": {
+      "kind": "accrued-threshold",
+      "denomination": "USDC",
+      "minimum_accrued": "500000000"
+    },
+    "cooldown_seconds": 21600,
+    "max_spend_per_execution": {
+      "denomination": "USDC",
+      "amount": "50000000"
+    },
+    "unspent_handling": "carry-forward"
+  },
+  "immutable_fields": [
+    "type",
+    "allocation_bps",
+    "activation_stage",
+    "hard_budget_ceiling"
+  ],
+  "notes": "Illustrative manifest only. Declares that 35% of this reaction's allocation is claimed by a post-ignition buyback, capped at 250,000 USDC total and 50 USDC per execution, firing no more than once per six hours once 500 USDC has accrued. Amounts are USDC base units (6 decimals). Whether allocation_bps across a module set must sum to 10000 is an open question; this example does not assume it does. Illustrative only. Not protocol defaults or committed parameters."
+}

@@ -65,6 +65,25 @@ This list is illustrative. It is not a committed module set.
 - How should a module set be represented so that it is verifiable by a participant
   before they trade?
 
+## Research workspace
+
+Current design work is organized across architecture notes, draft specifications and
+RFCs. Everything below is concept and research: no implementation exists.
+
+**Architecture**
+- [Architecture](docs/architecture.md) - purpose, declaration before launch, boundaries with core protocol parameters
+- [Module lifecycle](docs/module-lifecycle.md) - module behaviour across Spark, Charging, Critical Mass, Ignition and Expansion
+
+**Draft specifications**
+- [Module manifest schema](specs/module-manifest.schema.json) - draft JSON Schema for describing a module
+- [Example: buyback module](specs/examples/buyback-module.json) - a manifest conforming to the draft schema
+
+**RFCs**
+- [RFC 0001 - Module interface](rfcs/0001-module-interface.md) - how a common module interface might work
+
+**Open research**
+- [Allocation constraints](research/allocation-constraints.md) - conflicts between modules drawing on the same reaction allocation
+
 ## Links
 
 [Website](https://rearctor.io) · [Docs](https://rearctor.io/docs) · [GitHub](https://github.com/Rearctor) · [X](https://x.com/JoinRearctor) · [Telegram](https://t.me/rearctor)
